@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Flores frescas, buquês especiais e presentes feitos com carinho.">
+  <title>Flor de Lis | Floricultura</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">Um carinho em forma de flores · Entregamos amor em cada detalhe</div>
+  <header class="header">
+    <a class="brand" href="#inicio"><span class="brand-mark">✿</span><span>flor de lis<small>FLORICULTURA & PRESENTES</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
+    <nav id="nav">
+      <a href="#inicio">Início</a><a href="#colecao">Buquês</a><a href="#sobre">Nossa história</a><a href="#contato">Contato</a>
+    </nav>
+    <a class="header-cta" href="#colecao">Escolher flores <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <span class="eyebrow">FLORES QUE CONTAM HISTÓRIAS</span>
+        <h1>Um gesto simples.<br><em>Um sentimento</em><br>inesquecível.</h1>
+        <p>Buquês especiais para celebrar a vida, surpreender alguém querido e transformar qualquer dia em ocasião.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#colecao">Ver coleção <span>→</span></a><a class="text-link" href="#sobre">Conheça a floricultura</a></div>
+        <div class="hero-note"><span class="stars">★★★★★</span><span>Feito à mão, com carinho em cada pétala.</span></div>
+      </div>
+      <div class="hero-photo">
+        <img src="https://images.unsplash.com/photo-1494972308805-463bc619d34e?auto=format&fit=crop&w=1200&q=85" alt="Buquê de flores delicadas em tons rosados">
+        <div class="photo-tag"><span>✿</span><div><b>Flores fresquinhas</b><small>Selecionadas todos os dias</small></div></div>
+      </div>
+      <div class="hero-deco">FLORES · AFETO · BELEZA</div>
+    </section>
+
+    <section class="benefits">
+      <div><span>✿</span><p><b>Frescor todos os dias</b><small>Flores selecionadas com cuidado</small></p></div>
+      <div><span>♡</span><p><b>Feito com carinho</b><small>Arranjos montados à mão</small></p></div>
+      <div><span>⌖</span><p><b>Entrega especial</b><small>Surpresas que chegam até você</small></p></div>
+    </section>
+
+    <section class="collection section" id="colecao">
+      <div class="section-heading"><div><span class="eyebrow">ESCOLHAS COM AMOR</span><h2>Encontre o buquê <em>perfeito</em></h2></div><p>Para dizer “eu te amo”, “parabéns” ou simplesmente “lembrei de você”.</p></div>
+      <div class="filters" id="filters">
+        <button class="filter active" data-filter="todos">Todos</button><button class="filter" data-filter="romantico">Românticos</button><button class="filter" data-filter="alegre">Coloridos</button><button class="filter" data-filter="classico">Clássicos</button>
+      </div>
+      <div class="products" id="products">
+        <article class="product" data-category="romantico"><div class="product-image"><img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=800&q=85" alt="Buquê de rosas cor-de-rosa"><span class="tag">Mais amado</span><button class="quick-add" data-name="Doce Romance" data-price="159.90">+</button></div><div class="product-info"><div><h3>Doce Romance</h3><p>Rosas em tons suaves</p></div><b>R$ 159,90</b></div></article>
+        <article class="product" data-category="alegre"><div class="product-image"><img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=800&q=85" alt="Arranjo colorido de flores"><button class="quick-add" data-name="Jardim Alegre" data-price="139.90">+</button></div><div class="product-info"><div><h3>Jardim Alegre</h3><p>Mix de flores da estação</p></div><b>R$ 139,90</b></div></article>
+        <article class="product" data-category="classico"><div class="product-image"><img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=800&q=85" alt="Buquê clássico de flores brancas"><span class="tag">Elegante</span><button class="quick-add" data-name="Brisa Branca" data-price="189.90">+</button></div><div class="product-info"><div><h3>Brisa Branca</h3><p>Delicadeza em tons claros</p></div><b>R$ 189,90</b></div></article>
+        <article class="product" data-category="romantico"><div class="product-image"><img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=800&q=85" alt="Rosas vermelhas em buquê"><button class="quick-add" data-name="Paixão" data-price="219.90">+</button></div><div class="product-info"><div><h3>Paixão</h3><p>Rosas vermelhas selecionadas</p></div><b>R$ 219,90</b></div></article>
+      </div>
+      <p class="cart-status" id="cartStatus" aria-live="polite">Sua sacola está vazia. Escolha um buquê para começar. <span>♡</span></p>
+    </section>
+
+    <section class="story" id="sobre">
+      <div class="story-image"><img src="https://images.unsplash.com/photo-1457089328109-e5d9bd499191?auto=format&fit=crop&w=1100&q=85" alt="Florista preparando um arranjo floral"></div>
+      <div class="story-copy"><span class="eyebrow">MAIS QUE UMA FLORICULTURA</span><h2>Pequenos detalhes,<br><em>grandes emoções.</em></h2><p>Acreditamos que flores têm um jeito único de aproximar pessoas. Por isso, cada arranjo é preparado com atenção, criatividade e muito carinho — para que sua mensagem chegue ainda mais bonita.</p><a class="button button-outline" href="#contato">Fale com a gente <span>→</span></a></div>
+    </section>
+
+    <section class="quote"><span>“</span><p>Onde florescem flores,<br>floresce também a esperança.</p><small>UM POUQUINHO DE BELEZA PARA O SEU DIA</small></section>
+
+    <section class="contact section" id="contato"><div><span class="eyebrow">VAMOS FLORESCER JUNTOS?</span><h2>Seu próximo presente<br>começa <em>aqui.</em></h2></div><div class="contact-box"><p>Tem uma ocasião especial ou quer montar um arranjo personalizado? Adoraríamos ajudar.</p><a class="button button-dark" id="whatsappLink" href="https://wa.me/5500000000000" target="_blank" rel="noopener">Conversar pelo WhatsApp ↗</a><small>Atendimento de segunda a sábado · 9h às 18h</small></div></section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#inicio"><span class="brand-mark">✿</span><span>flor de lis<small>FLORICULTURA & PRESENTES</small></span></a><p>Feito com amor, para espalhar amor. © <span id="year"></span> Flor de Lis.</p><a href="#inicio">Voltar ao topo ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
